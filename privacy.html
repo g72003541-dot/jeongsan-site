@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정산일기 개인정보처리방침</title>
+<meta name="description" content="정산일기 — 인테리어 필름·타일 등 일당 시공 기사의 작업 기록과 정산을 돕는 안드로이드 앱">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body><div class="wrap">
+<header><img src="/icon.png" alt=""><b>정산일기</b></header>
+<nav><a href="/">홈</a><a href="/privacy">개인정보처리방침</a><a href="/delete-data">데이터 삭제 안내</a><a href="mailto:g72003541@gmail.com">문의</a></nav>
+
+<h1>개인정보처리방침</h1>
+<p class="lead">정산일기(이하 "앱")는 사용자의 작업 기록을 사용자 자신의 기기와 사용자 본인의 구글 계정에만 저장합니다. 이 문서는 앱이 어떤 정보를 다루고, 어디로 보내며, 어떻게 지우는지를 실제 동작 그대로 설명합니다.</p>
+<p><b>시행일</b>: 2026년 9월 10일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
+
+<h2>1. 앱이 다루는 정보</h2>
+<p>아래 정보는 모두 사용자가 앱에 직접 입력하는 것이며, 사용자의 기기 안(앱 전용 저장 공간)에 저장됩니다.</p>
+<table>
+<tr><th style="width:150px">항목</th><th>내용</th></tr>
+<tr><td>작업 기록</td><td>날짜, 시작·종료 시간, 현장 이름·주소, 시설 구분, 단가, 식대, 거래처 이름, 정산 상태와 입금일, 저녁 일기, 공동현관 비밀번호(선택)</td></tr>
+<tr><td>영수증 사진</td><td>사용자가 첨부한 사진 파일</td></tr>
+<tr><td>정산·선정산</td><td>보낸 정산서 내용, 청구 금액, 입금 확인 내역, 먼저 받은 돈(선정산)과 차감 내역</td></tr>
+<tr><td>거래처·장소</td><td>거래처 이름 목록, 자주 가는 곳 이름·주소·메모</td></tr>
+<tr><td>설정</td><td>경력 시작일, 기본 근무 시간·단가, 알림 설정, 정산서 형식, 정산서에 표시할 이름·연락처</td></tr>
+<tr><td>구글 계정 정보</td><td>구글 캘린더 연동을 켠 경우에만: 로그인한 계정의 이메일 주소(연결 상태 표시용)</td></tr>
+</table>
+<p>앱은 위치 정보, 연락처, 통화 기록, 광고 식별자를 수집하지 않으며, 분석·광고 도구를 사용하지 않습니다.</p>
+
+<h2>2. 개발자 서버는 없습니다</h2>
+<p>앱은 개발자가 운영하는 서버로 어떤 정보도 보내지 않습니다. 개발자는 사용자의 기록을 볼 수 없고, 수집하지도 않습니다. 앱이 외부와 통신하는 경우는 아래 3번의 구글 캘린더 연동뿐입니다.</p>
+
+<h2>3. 구글 캘린더 연동 (선택 기능)</h2>
+<p>사용자가 설정에서 "구글 캘린더 연결"을 눌러 구글 로그인과 권한 허용을 마친 경우에만 동작합니다. 연결하지 않으면 앱은 인터넷을 사용하지 않습니다.</p>
+<h3>요청하는 권한과 쓰임</h3>
+<ul>
+<li><b>일정 읽기·쓰기</b> (calendar.events) — 라벨별 캘린더에 작업 기록을 일정으로 올리고, 구글 캘린더에서 고친 내용을 앱으로 가져옵니다. 사용자가 "보기 전용"으로 연결한 공유 캘린더의 일정을 읽습니다.</li>
+<li><b>캘린더 만들기·이름 바꾸기</b> (calendar.calendars) — 라벨마다 캘린더를 하나씩 만들고, 라벨 이름을 바꾸면 캘린더 이름도 맞춥니다. 라벨을 지울 때 <b>앱이 만든 캘린더만</b> 함께 지웁니다. 사용자가 이미 갖고 있던 캘린더를 라벨에 연결한 경우 그 캘린더는 지우지 않습니다.</li>
+<li><b>캘린더 목록 보기</b> (calendar.calendarlist) — 연결할 캘린더를 고르고, 라벨 색을 캘린더 색에 맞춥니다.</li>
+</ul>
+<h3>구글 캘린더로 전송되는 정보</h3>
+<p>일정 하나마다 다음 정보가 사용자 본인의 구글 계정 캘린더에 저장됩니다: 날짜와 시간, 현장 이름·주소, 단가·식대, 거래처 이름, 시설 구분, 정산 상태(미정산/완료와 입금일), 저녁 일기 본문, 라벨 이름과 색. <b>공동현관 비밀번호, 영수증 사진, 정산서·입금 내역, 선정산, 거래처 목록, 설정은 구글로 보내지 않습니다.</b></p>
+<p>전송은 구글이 제공하는 암호화된 연결(HTTPS)로 이루어지며, 저장된 일정은 사용자의 구글 계정에 속합니다. 구글의 처리 방식은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 따릅니다. 앱은 구글 사용자 데이터를 광고, 신용 평가, 제3자 판매에 쓰지 않으며, Google API 서비스 사용자 데이터 정책의 제한적 사용 요건을 준수합니다.</p>
+<h3>공휴일 표시</h3>
+<p>달력의 공휴일은 구글이 공개한 "대한민국의 휴일" 캘린더에서 읽어 옵니다. 이때 사용자의 정보는 전송되지 않습니다.</p>
+
+<h2>4. 보관과 삭제</h2>
+<ul>
+<li><b>기기 안 데이터</b>: 사용자가 지우기 전까지 앱 안에 남습니다. 기록은 하나씩 지울 수 있고, 설정 → "모든 데이터 지우기"로 기록·설정·영수증 사진을 한 번에 지울 수 있습니다. 앱을 삭제해도 모두 지워집니다.</li>
+<li><b>구글 캘린더의 일정</b>: 앱에서 기록을 지우면 연결된 일정도 지워집니다. 단, 정산이 끝났거나 청구 중인 기록은 캘린더 쪽에서 지워져도 앱에 남습니다. 연결 해제나 "모든 데이터 지우기"는 구글 캘린더의 일정을 지우지 않으므로, 남은 일정은 구글 캘린더 앱에서 캘린더를 삭제해 지울 수 있습니다.</li>
+<li><b>구글 연결 해제</b>: 설정 → 구글 캘린더 → "연결 해제"를 누르면 앱이 갖고 있던 접근 권한을 반납하고 이메일 주소를 지웁니다. 구글 계정 설정의 "타사 앱 및 서비스"에서도 정산일기의 접근을 끊을 수 있습니다.</li>
+<li><b>백업 파일</b>: 설정 → "백업 파일 만들기"로 만든 zip 파일은 사용자가 고른 곳(메신저·드라이브 등)으로만 전달되며, 개발자는 받지 않습니다. 파일에는 1번의 모든 정보가 들어 있으니 보관에 주의해 주세요.</li>
+</ul>
+<p>자세한 절차는 <a href="/delete-data">데이터 삭제 안내</a>에 있습니다.</p>
+
+<h2>5. 기기 권한</h2>
+<ul>
+<li><b>알림</b> — 저녁 일기 알림과 입금 지연 알림. 설정에서 끌 수 있습니다.</li>
+<li><b>사진</b> — 영수증 사진을 고르거나(사진 선택기) 이미지 정산서를 갤러리에 저장할 때. Android 11 이상에서는 별도 저장소 권한 없이 동작합니다.</li>
+<li><b>인터넷</b> — 구글 캘린더 연동에만 사용합니다.</li>
+</ul>
+
+<h2>6. 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 의도적으로 수집하지 않습니다.</p>
+
+<h2>7. 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 시행일과 함께 갱신합니다. 중요한 변경은 앱 업데이트 안내에 함께 적습니다.</p>
+
+<h2>8. 문의</h2>
+<p>개인정보 관련 문의: <a href="mailto:g72003541@gmail.com">g72003541@gmail.com</a></p>
+
+<div class="en">
+<h2>Privacy Policy (English summary)</h2>
+<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipts, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer operates no server and never receives your data.</b></p>
+<p><b>Google Calendar sync is optional.</b> If you connect a Google account, the app requests three scopes: <code>calendar.events</code> to write your work records as events to per-label calendars and read changes back (including read-only access to calendars you chose to link); <code>calendar.calendars</code> to create one calendar per label, rename it, and delete only calendars the app itself created; <code>calendar.calendarlist</code> to list your calendars and match label colors. Data sent to your own Google Calendar per event: date/time, site name and address, day rate and meal allowance, client name, facility type, settlement status, diary text, label name/color. Door codes, receipt photos, settlement requests, advances, client lists and settings are never sent to Google. The app's use of Google user data complies with the Google API Services User Data Policy, including the Limited Use requirements; no data is used for advertising or sold to third parties.</p>
+<p><b>Deletion:</b> delete records individually, or use Settings → "Erase all data" to wipe everything on the device and revoke Google access. Events already in your Google Calendar remain under your Google account and can be deleted there. You can also revoke access at myaccount.google.com → Third-party apps. Contact: g72003541@gmail.com</p>
+</div>
+
+<footer>정산일기 · 문의 <a href="mailto:g72003541@gmail.com">g72003541@gmail.com</a> · <a href="/privacy">개인정보처리방침</a> · <a href="/delete-data">데이터 삭제 안내</a></footer>
+</div></body></html>
