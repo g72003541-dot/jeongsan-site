@@ -14,7 +14,7 @@
 
 <h1>개인정보처리방침</h1>
 <p class="lead">정산일기(이하 "앱")는 사용자의 작업 기록을 사용자 자신의 기기와 사용자 본인의 구글 계정에만 저장합니다. 이 문서는 앱이 어떤 정보를 다루고, 어디로 보내며, 어떻게 지우는지를 실제 동작 그대로 설명합니다.</p>
-<p><b>시행일</b>: 2026년 9월 10일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
+<p><b>시행일</b>: 2026년 9월 10일 · <b>최종 수정</b>: 2026년 10월 8일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
 
 <h2>1. 앱이 다루는 정보</h2>
 <p>아래 정보는 모두 사용자가 앱에 직접 입력하는 것이며, 사용자의 기기 안(앱 전용 저장 공간)에 저장됩니다.</p>
@@ -33,7 +33,7 @@
 <p>앱은 개발자가 운영하는 서버로 어떤 정보도 보내지 않습니다. 개발자는 사용자의 기록을 볼 수 없고, 수집하지도 않습니다. 앱이 외부와 통신하는 경우는 아래 3번의 구글 캘린더 연동뿐입니다.</p>
 
 <h2>3. 구글 캘린더 연동 (선택 기능)</h2>
-<p>사용자가 설정에서 "구글 캘린더 연결"을 눌러 구글 로그인과 권한 허용을 마친 경우에만 동작합니다. 연결하지 않으면 앱은 인터넷을 사용하지 않습니다.</p>
+<p>사용자가 설정에서 "구글 캘린더 연결"을 눌러 구글 로그인과 권한 허용을 마친 경우에만 동작합니다. 연결하지 않으면 앱은 사용자의 기록을 어디로도 보내지 않습니다. (설정 화면에서 새 버전이 있는지 Google Play에 확인하는 것은 예외이며, 이때 사용자의 기록은 전송되지 않습니다.)</p>
 <h3>요청하는 권한과 쓰임</h3>
 <ul>
 <li><b>일정 읽기·쓰기</b> (calendar.events) — 라벨별 캘린더에 작업 기록을 일정으로 올리고, 구글 캘린더에서 고친 내용을 앱으로 가져옵니다. 사용자가 "보기 전용"으로 연결한 공유 캘린더의 일정을 읽습니다.</li>
@@ -46,11 +46,15 @@
 <h3>공휴일 표시</h3>
 <p>달력의 공휴일은 구글이 공개한 "대한민국의 휴일" 캘린더에서 읽어 옵니다. 이때 사용자의 정보는 전송되지 않습니다.</p>
 
+<h3>구글에서 읽어 오는 정보</h3>
+<p>앱이 구글 계정에서 읽는 것은 다음뿐입니다: ① 로그인한 계정의 이메일 주소 ② 캘린더 목록(이름·색·식별자) ③ 사용자가 라벨에 연결한 캘린더의 일정(제목, 날짜·시간, 장소, 설명, 수정·삭제 여부). 읽은 일정은 앱 안에서 작업 기록으로 보여 주고 경력·정산 계산에 쓰는 데에만 사용합니다. 메일, 연락처, 드라이브 등 다른 구글 데이터에는 접근하지 않습니다.</p>
+<h3>공유와 보호</h3>
+<p>앱은 구글 사용자 데이터를 개발자를 포함한 <b>누구에게도 전달·공유·판매하지 않습니다.</b> 읽어 온 데이터는 다른 앱이 접근할 수 없는 앱 전용 저장 공간에만 저장되고, 구글과의 통신은 모두 암호화된 연결(HTTPS)로 이루어집니다. 구글 로그인 정보(접근 토큰)는 안드로이드의 Google Play 서비스가 관리하며 개발자에게 전달되지 않습니다. 앱은 구글 사용자 데이터를 AI·기계학습 모델의 개발이나 학습에 사용하지 않습니다.</p>
 <h2>4. 보관과 삭제</h2>
 <ul>
 <li><b>기기 안 데이터</b>: 사용자가 지우기 전까지 앱 안에 남습니다. 기록은 하나씩 지울 수 있고, 설정 → "모든 데이터 지우기"로 기록·설정·영수증 사진을 한 번에 지울 수 있습니다. 앱을 삭제해도 모두 지워집니다.</li>
 <li><b>구글 캘린더의 일정</b>: 앱에서 기록을 지우면 연결된 일정도 지워집니다. 단, 정산이 끝났거나 청구 중인 기록은 캘린더 쪽에서 지워져도 앱에 남습니다. 연결 해제나 "모든 데이터 지우기"는 구글 캘린더의 일정을 지우지 않으므로, 남은 일정은 구글 캘린더 앱에서 캘린더를 삭제해 지울 수 있습니다.</li>
-<li><b>구글 연결 해제</b>: 설정 → 구글 캘린더 → "연결 해제"를 누르면 앱이 갖고 있던 접근 권한을 반납하고 이메일 주소를 지웁니다. 구글 계정 설정의 "타사 앱 및 서비스"에서도 정산일기의 접근을 끊을 수 있습니다.</li>
+<li><b>구글 연결 해제</b>: 설정 → 구글 캘린더 → "연결 해제"를 누르면 앱이 갖고 있던 접근 권한을 반납합니다. 로그인했던 계정의 이메일 주소는 다시 연결할 때 같은 계정인지 확인하는 용도로 기기 안에만 남으며, "모든 데이터 지우기"나 앱 삭제로 지워집니다. 구글 계정 설정의 "타사 앱 및 서비스"에서도 정산일기의 접근을 끊을 수 있습니다.</li>
 <li><b>백업 파일</b>: 설정 → "백업 파일 만들기"로 만든 zip 파일은 사용자가 고른 곳(메신저·드라이브 등)으로만 전달되며, 개발자는 받지 않습니다. 파일에는 1번의 모든 정보가 들어 있으니 보관에 주의해 주세요.</li>
 </ul>
 <p>자세한 절차는 <a href="/delete-data">데이터 삭제 안내</a>에 있습니다.</p>
@@ -59,7 +63,7 @@
 <ul>
 <li><b>알림</b> — 저녁 일기 알림과 입금 지연 알림. 설정에서 끌 수 있습니다.</li>
 <li><b>사진</b> — 영수증 사진을 고르거나(사진 선택기) 이미지 정산서를 갤러리에 저장할 때. Android 11 이상에서는 별도 저장소 권한 없이 동작합니다.</li>
-<li><b>인터넷</b> — 구글 캘린더 연동에만 사용합니다.</li>
+<li><b>인터넷</b> — 구글 캘린더 연동과, 설정 화면에서 새 버전이 있는지 Google Play에 확인하는 데에만 사용합니다.</li>
 </ul>
 
 <h2>6. 아동</h2>
@@ -72,10 +76,18 @@
 <p>개인정보 관련 문의: <a href="mailto:g72003541@gmail.com">g72003541@gmail.com</a></p>
 
 <div class="en">
-<h2>Privacy Policy (English summary)</h2>
-<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipts, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer operates no server and never receives your data.</b></p>
-<p><b>Google Calendar sync is optional.</b> If you connect a Google account, the app requests three scopes: <code>calendar.events</code> to write your work records as events to per-label calendars and read changes back (including read-only access to calendars you chose to link); <code>calendar.calendars</code> to create one calendar per label, rename it, and delete only calendars the app itself created; <code>calendar.calendarlist</code> to list your calendars and match label colors. Data sent to your own Google Calendar per event: date/time, site name and address, day rate and meal allowance, client name, facility type, settlement status, diary text, label name/color. Door codes, receipt photos, settlement requests, advances, client lists and settings are never sent to Google. The app's use of Google user data complies with the Google API Services User Data Policy, including the Limited Use requirements; no data is used for advertising or sold to third parties.</p>
-<p><b>Deletion:</b> delete records individually, or use Settings → "Erase all data" to wipe everything on the device and revoke Google access. Events already in your Google Calendar remain under your Google account and can be deleted there. You can also revoke access at myaccount.google.com → Third-party apps. Contact: g72003541@gmail.com</p>
+<h2>Privacy Policy (English)</h2>
+<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipt photos, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer operates no server and never receives your data.</b> Last updated: October 8, 2026.</p>
+
+<h3>Google user data</h3>
+<p>Google Calendar sync is optional. Nothing below happens unless you tap "Connect Google Calendar" in Settings and grant access.</p>
+<p><b>Data accessed.</b> The app accesses only: (1) the email address of the Google account you sign in with; (2) your calendar list (calendar names, colours and IDs); (3) events in the calendars linked to your labels (title, date and time, location, description, and whether an event was changed or deleted). The app requests three scopes: <code>calendar.events</code>, <code>calendar.calendars</code> and <code>calendar.calendarlist</code>. It does not access Gmail, Contacts, Drive or any other Google data.</p>
+<p><b>Data use.</b> Google user data is used only to provide the app's own user-facing features: writing your work records to your Google Calendar as events, reading back changes you make in Google Calendar, creating and renaming one calendar per label (and deleting only calendars the app itself created), letting you choose which calendar to link, and matching label colours. The email address is used only to show which account is connected and to recognise the same account when you reconnect. Per event, the app writes to your own Google Calendar: date and time, site name and address, day rate and meal allowance, client name, facility type, settlement status, diary text, and label name/colour. Door codes, receipt photos, settlement requests, advances, client lists and settings are never sent to Google.</p>
+<p><b>Data sharing and transfer.</b> The app does not share, transfer or sell Google user data to anyone, including the developer. Data moves only between your device and your own Google account. There are no analytics or advertising SDKs.</p>
+<p><b>Data protection.</b> Data read from Google is stored only in the app's private storage on your device, which other apps cannot access. All communication with Google uses encrypted connections (HTTPS/TLS). OAuth access tokens are managed by Google Play services on the device and are never sent to the developer.</p>
+<p><b>Data retention and deletion.</b> Data stays on your device until you delete it. You can delete records one by one, or use Settings → "Erase all data" to wipe all records, settings, photos and the stored account email and to disconnect Google. Uninstalling the app also removes everything on the device. "Disconnect" in Settings revokes the app's access; the account email remains on the device only so the same account can be recognised on reconnect, and is removed by "Erase all data" or uninstalling. Events the app wrote to your Google Calendar belong to your Google account: deleting a record in the app deletes its event, and you can delete the calendars in Google Calendar at any time. You can also revoke access at myaccount.google.com → Third-party apps &amp; services. Details: <a href="/delete-data">Data deletion guide</a>.</p>
+<p><b>Limited Use.</b> The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, credit or lending decisions, or to develop, improve or train AI/ML models.</p>
+<p>Contact: g72003541@gmail.com</p>
 </div>
 
 <footer>정산일기 · 문의 <a href="mailto:g72003541@gmail.com">g72003541@gmail.com</a> · <a href="/privacy">개인정보처리방침</a> · <a href="/delete-data">데이터 삭제 안내</a></footer>
