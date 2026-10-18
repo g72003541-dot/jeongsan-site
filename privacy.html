@@ -14,26 +14,41 @@
 
 <h1>개인정보처리방침</h1>
 <p class="lead">정산일기(이하 "앱")는 사용자의 작업 기록을 사용자 자신의 기기와 사용자 본인의 구글 계정에만 저장합니다. 이 문서는 앱이 어떤 정보를 다루고, 어디로 보내며, 어떻게 지우는지를 실제 동작 그대로 설명합니다.</p>
-<p><b>시행일</b>: 2026년 9월 10일 · <b>최종 수정</b>: 2026년 10월 8일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
+<p><b>시행일</b>: 2026년 9월 10일 · <b>최종 수정</b>: 2026년 10월 18일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
 
 <h2>1. 앱이 다루는 정보</h2>
 <p>아래 정보는 모두 사용자가 앱에 직접 입력하는 것이며, 사용자의 기기 안(앱 전용 저장 공간)에 저장됩니다.</p>
 <table>
 <tr><th style="width:150px">항목</th><th>내용</th></tr>
-<tr><td>작업 기록</td><td>날짜, 시작·종료 시간, 현장 이름·주소, 시설 구분, 단가, 식대, 거래처 이름, 정산 상태와 입금일, 저녁 일기, 공동현관 비밀번호(선택)</td></tr>
+<tr><td>작업 기록</td><td>날짜, 시작·종료 시간, 현장 이름·주소, 시설 구분, 단가, 식대, 거래처 이름, 정산 상태와 입금일, 저녁 일기, 공동현관·세대 현관 비밀번호(선택)</td></tr>
 <tr><td>영수증 사진</td><td>사용자가 첨부한 사진 파일</td></tr>
 <tr><td>정산·선정산</td><td>보낸 정산서 내용, 청구 금액, 입금 확인 내역, 먼저 받은 돈(선정산)과 차감 내역</td></tr>
 <tr><td>거래처·장소</td><td>거래처 이름 목록, 자주 가는 곳 이름·주소·메모</td></tr>
 <tr><td>설정</td><td>경력 시작일, 기본 근무 시간·단가, 알림 설정, 정산서 형식, 정산서에 표시할 이름·연락처</td></tr>
 <tr><td>구글 계정 정보</td><td>구글 캘린더 연동을 켠 경우에만: 로그인한 계정의 이메일 주소(연결 상태 표시용)</td></tr>
 </table>
-<p>앱은 위치 정보, 연락처, 통화 기록, 광고 식별자를 수집하지 않으며, 분석·광고 도구를 사용하지 않습니다.</p>
+<p>앱은 위치 정보, 연락처, 통화 기록, 광고 식별자를 수집하지 않으며, 광고 도구와 외부 분석 도구(구글 애널리틱스 등)를 사용하지 않습니다.</p>
 
-<h2>2. 개발자 서버는 없습니다</h2>
-<p>앱은 개발자가 운영하는 서버로 어떤 정보도 보내지 않습니다. 개발자는 사용자의 기록을 볼 수 없고, 수집하지도 않습니다. 앱이 외부와 통신하는 경우는 아래 3번의 구글 캘린더 연동뿐입니다.</p>
+<h2>2. 개발자에게 가는 정보: 익명 사용 통계뿐입니다</h2>
+<p>앱은 아래 '익명 사용 통계'에 적힌 정보 외에는 개발자가 운영하는 서버로 어떤 정보도 보내지 않습니다. 개발자는 사용자의 기록을 볼 수 없습니다. 앱이 외부와 통신하는 경우는 이 익명 사용 통계와 아래 3번의 구글 캘린더 연동뿐입니다.</p>
+<h3>익명 사용 통계 (3.15.0 버전부터)</h3>
+<p>앱을 더 낫게 만들기 위해, 앱을 여는 날 하루 한 번 익명 사용 통계를 개발자 서버로 보냅니다. 전송은 암호화된 연결(HTTPS)로 이루어집니다.</p>
+<table>
+<tr><th style="width:150px">보내는 정보</th><th>내용</th></tr>
+<tr><td>기기 번호</td><td>앱이 처음 실행될 때 만든 무작위 번호. 전화번호, 광고 식별자, 구글 계정과 연결되지 않습니다.</td></tr>
+<tr><td>기기·앱 정보</td><td>기기 종류(안드로이드/iOS), 앱 버전, 운영체제 버전</td></tr>
+<tr><td>날짜</td><td>앱을 사용한 날짜와 앱을 처음 설치한 날짜 (시각은 보내지 않습니다)</td></tr>
+<tr><td>켜 둔 기능</td><td>홈 화면 위젯, 구글 캘린더 연결, 당일 정산 거래처, 입금 계좌 등록, 일기 알림을 쓰고 있는지 여부(예/아니오)</td></tr>
+<tr><td>사용 개수</td><td>기록, 일기, 정산서, 입금 확인, 영수증 사진, 업데이트 소식 버튼을 몇 번 썼는지 나타내는 숫자</td></tr>
+</table>
+<p><b>보내지 않는 정보</b>: 현장 이름·주소와 동·호수, 공동현관·세대 현관 비밀번호, 금액, 거래처 이름, 입금 계좌, 정산 문자 내용, 일기 내용, 영수증 사진, 구글 계정 이메일, 위치 정보. 서버는 위 표에 없는 정보가 오면 저장하지 않고 버립니다.</p>
+<p><b>이용 목적</b>: 사용자 수, 계속 쓰는 비율, 기능별 사용 정도를 파악해 앱을 개선하는 데만 사용합니다. 광고나 다른 목적으로 쓰지 않고, 다른 곳에 제공하거나 판매하지 않습니다.</p>
+<p><b>보관 기간</b>: 받은 날로부터 2년이 지나면 자동으로 지웁니다.</p>
+<p><b>끄는 방법</b>: 설정 → 데이터 → "사용 통계 보내기"를 끄면 더 이상 보내지 않으며, 기기에 쌓여 있던 통계와 기기 번호도 함께 지워집니다.</p>
+<p><b>처리 위탁</b>: 통계 서버와 저장소는 Vercel(미국)과 Neon(미국)의 클라우드에서 운영됩니다.</p>
 
 <h2>3. 구글 캘린더 연동 (선택 기능)</h2>
-<p>사용자가 설정에서 "구글 캘린더 연결"을 눌러 구글 로그인과 권한 허용을 마친 경우에만 동작합니다. 연결하지 않으면 앱은 사용자의 기록을 어디로도 보내지 않습니다. (설정 화면에서 새 버전이 있는지 Google Play에 확인하는 것은 예외이며, 이때 사용자의 기록은 전송되지 않습니다.)</p>
+<p>사용자가 설정에서 "구글 캘린더 연결"을 눌러 구글 로그인과 권한 허용을 마친 경우에만 동작합니다. 연결하지 않으면 앱은 사용자의 기록을 어디로도 보내지 않습니다. (설정 화면에서 새 버전이 있는지 Google Play에 확인하는 것과 2번의 익명 사용 통계는 예외이며, 이때 사용자의 기록은 전송되지 않습니다.)</p>
 <h3>요청하는 권한과 쓰임</h3>
 <ul>
 <li><b>일정 읽기·쓰기</b> (calendar.events) — 라벨별 캘린더에 작업 기록을 일정으로 올리고, 구글 캘린더에서 고친 내용을 앱으로 가져옵니다. 사용자가 "보기 전용"으로 연결한 공유 캘린더의 일정을 읽습니다.</li>
@@ -41,7 +56,7 @@
 <li><b>캘린더 목록 보기</b> (calendar.calendarlist) — 연결할 캘린더를 고르고, 라벨 색을 캘린더 색에 맞춥니다.</li>
 </ul>
 <h3>구글 캘린더로 전송되는 정보</h3>
-<p>일정 하나마다 다음 정보가 사용자 본인의 구글 계정 캘린더에 저장됩니다: 날짜와 시간, 현장 이름·주소, 단가·식대, 거래처 이름, 시설 구분, 정산 상태(미정산/완료와 입금일), 저녁 일기 본문, 라벨 이름과 색. <b>공동현관 비밀번호, 영수증 사진, 정산서·입금 내역, 선정산, 거래처 목록, 설정은 구글로 보내지 않습니다.</b></p>
+<p>일정 하나마다 다음 정보가 사용자 본인의 구글 계정 캘린더에 저장됩니다: 날짜와 시간, 현장 이름·주소, 단가·식대, 거래처 이름, 시설 구분, 정산 상태(미정산/완료와 입금일), 저녁 일기 본문, 라벨 이름과 색. <b>공동현관·세대 현관 비밀번호, 영수증 사진, 정산서·입금 내역, 선정산, 거래처 목록, 설정은 구글로 보내지 않습니다.</b></p>
 <p>전송은 구글이 제공하는 암호화된 연결(HTTPS)로 이루어지며, 저장된 일정은 사용자의 구글 계정에 속합니다. 구글의 처리 방식은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 따릅니다. 앱은 구글 사용자 데이터를 광고, 신용 평가, 제3자 판매에 쓰지 않으며, Google API 서비스 사용자 데이터 정책의 제한적 사용 요건을 준수합니다.</p>
 <h3>공휴일 표시</h3>
 <p>달력의 공휴일은 구글이 공개한 "대한민국의 휴일" 캘린더에서 읽어 옵니다. 이때 사용자의 정보는 전송되지 않습니다.</p>
@@ -55,6 +70,7 @@
 <li><b>기기 안 데이터</b>: 사용자가 지우기 전까지 앱 안에 남습니다. 기록은 하나씩 지울 수 있고, 설정 → "모든 데이터 지우기"로 기록·설정·영수증 사진을 한 번에 지울 수 있습니다. 앱을 삭제해도 모두 지워집니다.</li>
 <li><b>구글 캘린더의 일정</b>: 앱에서 기록을 지우면 연결된 일정도 지워집니다. 단, 정산이 끝났거나 청구 중인 기록은 캘린더 쪽에서 지워져도 앱에 남습니다. 연결 해제나 "모든 데이터 지우기"는 구글 캘린더의 일정을 지우지 않으므로, 남은 일정은 구글 캘린더 앱에서 캘린더를 삭제해 지울 수 있습니다.</li>
 <li><b>구글 연결 해제</b>: 설정 → 구글 캘린더 → "연결 해제"를 누르면 앱이 갖고 있던 접근 권한을 반납합니다. 로그인했던 계정의 이메일 주소는 다시 연결할 때 같은 계정인지 확인하는 용도로 기기 안에만 남으며, "모든 데이터 지우기"나 앱 삭제로 지워집니다. 구글 계정 설정의 "타사 앱 및 서비스"에서도 정산일기의 접근을 끊을 수 있습니다.</li>
+<li><b>익명 사용 통계</b>: 서버에서 받은 날로부터 2년이 지나면 자동으로 지워집니다. 기기 번호는 누구의 것인지 알 수 없어 개별 삭제 요청을 처리할 수 없으므로, 설정 → 데이터 → "사용 통계 보내기"를 끄면 그때부터 보내지 않고 기기에 쌓인 통계와 기기 번호가 지워집니다.</li>
 <li><b>백업 파일</b>: 설정 → "백업 파일 만들기"로 만든 zip 파일은 사용자가 고른 곳(메신저·드라이브 등)으로만 전달되며, 개발자는 받지 않습니다. 파일에는 1번의 모든 정보가 들어 있으니 보관에 주의해 주세요.</li>
 </ul>
 <p>자세한 절차는 <a href="/delete-data">데이터 삭제 안내</a>에 있습니다.</p>
@@ -63,7 +79,7 @@
 <ul>
 <li><b>알림</b> — 저녁 일기 알림과 입금 지연 알림. 설정에서 끌 수 있습니다.</li>
 <li><b>사진</b> — 영수증 사진을 고르거나(사진 선택기) 이미지 정산서를 갤러리에 저장할 때. Android 11 이상에서는 별도 저장소 권한 없이 동작합니다.</li>
-<li><b>인터넷</b> — 구글 캘린더 연동과, 설정 화면에서 새 버전이 있는지 Google Play에 확인하는 데에만 사용합니다.</li>
+<li><b>인터넷</b> — 구글 캘린더 연동, 설정 화면에서 새 버전이 있는지 Google Play에 확인하는 것, 2번의 익명 사용 통계에만 사용합니다.</li>
 </ul>
 
 <h2>6. 아동</h2>
@@ -77,13 +93,16 @@
 
 <div class="en">
 <h2>Privacy Policy (English)</h2>
-<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipt photos, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer operates no server and never receives your data.</b> Last updated: October 8, 2026.</p>
+<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipt photos, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer never receives your records.</b> The only thing sent to the developer is the anonymous usage statistics described below. Last updated: October 18, 2026.</p>
+
+<h3>Anonymous usage statistics (from version 3.15.0)</h3>
+<p>Once a day, when you open the app, it sends anonymous usage statistics to the developer's server over HTTPS: a random device number created by the app (not linked to your phone number, advertising ID or Google account), device type (Android/iOS), app and OS version, the date of use and the install date (no time of day), whether certain features are turned on (home-screen widget, Google Calendar sync, same-day clients, bank account, diary reminder), and counts of records, diary entries, settlement sheets, payment confirmations, receipt photos and update-news buttons used. It never sends site names or addresses, door codes, amounts, client names, bank accounts, message text, diary text, photos, your Google account email or location. The data is used only to understand how many people use the app and which features they use, is not used for advertising, and is not shared or sold. It is deleted automatically two years after it is received. You can turn it off in Settings → Data → "Send usage statistics"; turning it off also deletes the stored counts and device number on your phone. The server and database run on Vercel and Neon (USA).</p>
 
 <h3>Google user data</h3>
 <p>Google Calendar sync is optional. Nothing below happens unless you tap "Connect Google Calendar" in Settings and grant access.</p>
 <p><b>Data accessed.</b> The app accesses only: (1) the email address of the Google account you sign in with; (2) your calendar list (calendar names, colours and IDs); (3) events in the calendars linked to your labels (title, date and time, location, description, and whether an event was changed or deleted). The app requests three scopes: <code>calendar.events</code>, <code>calendar.calendars</code> and <code>calendar.calendarlist</code>. It does not access Gmail, Contacts, Drive or any other Google data.</p>
 <p><b>Data use.</b> Google user data is used only to provide the app's own user-facing features: writing your work records to your Google Calendar as events, reading back changes you make in Google Calendar, creating and renaming one calendar per label (and deleting only calendars the app itself created), letting you choose which calendar to link, and matching label colours. The email address is used only to show which account is connected and to recognise the same account when you reconnect. Per event, the app writes to your own Google Calendar: date and time, site name and address, day rate and meal allowance, client name, facility type, settlement status, diary text, and label name/colour. Door codes, receipt photos, settlement requests, advances, client lists and settings are never sent to Google.</p>
-<p><b>Data sharing and transfer.</b> The app does not share, transfer or sell Google user data to anyone, including the developer. Data moves only between your device and your own Google account. There are no analytics or advertising SDKs.</p>
+<p><b>Data sharing and transfer.</b> The app does not share, transfer or sell Google user data to anyone, including the developer. Data moves only between your device and your own Google account. There are no third-party analytics or advertising SDKs.</p>
 <p><b>Data protection.</b> Data read from Google is stored only in the app's private storage on your device, which other apps cannot access. All communication with Google uses encrypted connections (HTTPS/TLS). OAuth access tokens are managed by Google Play services on the device and are never sent to the developer.</p>
 <p><b>Data retention and deletion.</b> Data stays on your device until you delete it. You can delete records one by one, or use Settings → "Erase all data" to wipe all records, settings, photos and the stored account email and to disconnect Google. Uninstalling the app also removes everything on the device. "Disconnect" in Settings revokes the app's access; the account email remains on the device only so the same account can be recognised on reconnect, and is removed by "Erase all data" or uninstalling. Events the app wrote to your Google Calendar belong to your Google account: deleting a record in the app deletes its event, and you can delete the calendars in Google Calendar at any time. You can also revoke access at myaccount.google.com → Third-party apps &amp; services. Details: <a href="/delete-data">Data deletion guide</a>.</p>
 <p><b>Limited Use.</b> The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, credit or lending decisions, or to develop, improve or train AI/ML models.</p>
