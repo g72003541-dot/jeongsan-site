@@ -14,7 +14,7 @@
 
 <h1>개인정보처리방침</h1>
 <p class="lead">정산일기(이하 "앱")는 사용자의 작업 기록을 사용자 자신의 기기와 사용자 본인의 구글 계정에만 저장합니다. 이 문서는 앱이 어떤 정보를 다루고, 어디로 보내며, 어떻게 지우는지를 실제 동작 그대로 설명합니다.</p>
-<p><b>시행일</b>: 2026년 9월 10일 · <b>최종 수정</b>: 2026년 10월 18일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
+<p><b>시행일</b>: 2026년 9월 10일 · <b>최종 수정</b>: 2026년 10월 19일 · <b>운영자</b>: 정산일기 개발자 · <b>문의</b>: g72003541@gmail.com</p>
 
 <h2>1. 앱이 다루는 정보</h2>
 <p>아래 정보는 모두 사용자가 앱에 직접 입력하는 것이며, 사용자의 기기 안(앱 전용 저장 공간)에 저장됩니다.</p>
@@ -44,7 +44,7 @@
 <p><b>보내지 않는 정보</b>: 현장 이름·주소와 동·호수, 공동현관·세대 현관 비밀번호, 금액, 거래처 이름, 입금 계좌, 정산 문자 내용, 일기 내용, 영수증 사진, 구글 계정 이메일, 위치 정보. 서버는 위 표에 없는 정보가 오면 저장하지 않고 버립니다.</p>
 <p><b>이용 목적</b>: 사용자 수, 계속 쓰는 비율, 기능별 사용 정도를 파악해 앱을 개선하는 데만 사용합니다. 광고나 다른 목적으로 쓰지 않고, 다른 곳에 제공하거나 판매하지 않습니다.</p>
 <p><b>보관 기간</b>: 받은 날로부터 2년이 지나면 자동으로 지웁니다.</p>
-<p><b>끄는 방법</b>: 설정 → 데이터 → "사용 통계 보내기"를 끄면 더 이상 보내지 않으며, 기기에 쌓여 있던 통계와 기기 번호도 함께 지워집니다.</p>
+<p><b>보내지 않으려면</b>: 익명 사용 통계는 앱 기능의 일부로 항상 보내며(3.15.1 버전부터 설정에서 끄는 스위치가 없습니다), 앱을 지우면 더 이상 보내지 않고 기기에 있던 통계와 기기 번호도 함께 지워집니다.</p>
 <p><b>처리 위탁</b>: 통계 서버와 저장소는 Vercel(미국)과 Neon(미국)의 클라우드에서 운영됩니다.</p>
 
 <h2>3. 구글 캘린더 연동 (선택 기능)</h2>
@@ -70,7 +70,7 @@
 <li><b>기기 안 데이터</b>: 사용자가 지우기 전까지 앱 안에 남습니다. 기록은 하나씩 지울 수 있고, 설정 → "모든 데이터 지우기"로 기록·설정·영수증 사진을 한 번에 지울 수 있습니다. 앱을 삭제해도 모두 지워집니다.</li>
 <li><b>구글 캘린더의 일정</b>: 앱에서 기록을 지우면 연결된 일정도 지워집니다. 단, 정산이 끝났거나 청구 중인 기록은 캘린더 쪽에서 지워져도 앱에 남습니다. 연결 해제나 "모든 데이터 지우기"는 구글 캘린더의 일정을 지우지 않으므로, 남은 일정은 구글 캘린더 앱에서 캘린더를 삭제해 지울 수 있습니다.</li>
 <li><b>구글 연결 해제</b>: 설정 → 구글 캘린더 → "연결 해제"를 누르면 앱이 갖고 있던 접근 권한을 반납합니다. 로그인했던 계정의 이메일 주소는 다시 연결할 때 같은 계정인지 확인하는 용도로 기기 안에만 남으며, "모든 데이터 지우기"나 앱 삭제로 지워집니다. 구글 계정 설정의 "타사 앱 및 서비스"에서도 정산일기의 접근을 끊을 수 있습니다.</li>
-<li><b>익명 사용 통계</b>: 서버에서 받은 날로부터 2년이 지나면 자동으로 지워집니다. 기기 번호는 누구의 것인지 알 수 없어 개별 삭제 요청을 처리할 수 없으므로, 설정 → 데이터 → "사용 통계 보내기"를 끄면 그때부터 보내지 않고 기기에 쌓인 통계와 기기 번호가 지워집니다.</li>
+<li><b>익명 사용 통계</b>: 서버에서 받은 날로부터 2년이 지나면 자동으로 지워집니다. 기기 번호는 누구의 것인지 알 수 없어 개별 삭제 요청을 처리할 수 없으며, 앱을 지우면 그때부터 보내지 않고 기기에 있던 통계와 기기 번호가 지워집니다.</li>
 <li><b>백업 파일</b>: 설정 → "백업 파일 만들기"로 만든 zip 파일은 사용자가 고른 곳(메신저·드라이브 등)으로만 전달되며, 개발자는 받지 않습니다. 파일에는 1번의 모든 정보가 들어 있으니 보관에 주의해 주세요.</li>
 </ul>
 <p>자세한 절차는 <a href="/delete-data">데이터 삭제 안내</a>에 있습니다.</p>
@@ -93,10 +93,10 @@
 
 <div class="en">
 <h2>Privacy Policy (English)</h2>
-<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipt photos, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer never receives your records.</b> The only thing sent to the developer is the anonymous usage statistics described below. Last updated: October 18, 2026.</p>
+<p>Jeongsan Diary ("the app") is an Android app for day-rate installers to log work days and settle payments. All data you enter (work records, receipt photos, settlement requests, advances, clients, places, settings) is stored only on your device. <b>The developer never receives your records.</b> The only thing sent to the developer is the anonymous usage statistics described below. Last updated: October 19, 2026.</p>
 
 <h3>Anonymous usage statistics (from version 3.15.0)</h3>
-<p>Once a day, when you open the app, it sends anonymous usage statistics to the developer's server over HTTPS: a random device number created by the app (not linked to your phone number, advertising ID or Google account), device type (Android/iOS), app and OS version, the date of use and the install date (no time of day), whether certain features are turned on (home-screen widget, Google Calendar sync, same-day clients, bank account, diary reminder), and counts of records, diary entries, settlement sheets, payment confirmations, receipt photos and update-news buttons used. It never sends site names or addresses, door codes, amounts, client names, bank accounts, message text, diary text, photos, your Google account email or location. The data is used only to understand how many people use the app and which features they use, is not used for advertising, and is not shared or sold. It is deleted automatically two years after it is received. You can turn it off in Settings → Data → "Send usage statistics"; turning it off also deletes the stored counts and device number on your phone. The server and database run on Vercel and Neon (USA).</p>
+<p>Once a day, when you open the app, it sends anonymous usage statistics to the developer's server over HTTPS: a random device number created by the app (not linked to your phone number, advertising ID or Google account), device type (Android/iOS), app and OS version, the date of use and the install date (no time of day), whether certain features are turned on (home-screen widget, Google Calendar sync, same-day clients, bank account, diary reminder), and counts of records, diary entries, settlement sheets, payment confirmations, receipt photos and update-news buttons used. It never sends site names or addresses, door codes, amounts, client names, bank accounts, message text, diary text, photos, your Google account email or location. The data is used only to understand how many people use the app and which features they use, is not used for advertising, and is not shared or sold. It is deleted automatically two years after it is received. Sending these statistics is part of how the app works and cannot be turned off in the app (from version 3.15.1); uninstalling the app stops it and deletes the stored counts and device number on your phone. The server and database run on Vercel and Neon (USA).</p>
 
 <h3>Google user data</h3>
 <p>Google Calendar sync is optional. Nothing below happens unless you tap "Connect Google Calendar" in Settings and grant access.</p>
